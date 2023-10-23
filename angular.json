@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-blog": {
+    "blog-desafio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-blog",
+            "outputPath": "dist/blog-desafio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-blog:build:production"
+              "browserTarget": "blog-desafio:build:production"
             },
             "development": {
-              "browserTarget": "angular-blog:build:development"
+              "browserTarget": "blog-desafio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-blog:build"
+            "browserTarget": "blog-desafio:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "5276ffc3-d6bf-48b7-859e-6f912aa36466"
   }
 }
